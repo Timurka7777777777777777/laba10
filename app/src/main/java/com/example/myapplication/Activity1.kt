@@ -11,9 +11,9 @@ import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 
 class Activity1 : AppCompatActivity() {
-    val colors = arrayListOf(0xC5CAE9, 0xB2EBF2, 0xFFF9C4)
+    var colors = arrayListOf(0xC5CAE9, 0xB2EBF2, 0xFFF9C4)
     var sheetNumber = 0
-    val text: EditText = findViewById(R.id.text)
+    private lateinit var text : EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
